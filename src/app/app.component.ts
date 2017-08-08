@@ -18,4 +18,8 @@ export class AppComponent {
   title = 'Sarah Leahy';
   heros = HEROS;
   selectedHero: Hero;
+
+  onSelect(hero: Hero) {
+      this.selectedHero = hero;
+  }
 }
