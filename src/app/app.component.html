@@ -2,7 +2,7 @@
 <div>
   <h1>My Heros</h1>
   <ul class="heros">
-    <li *ngFor="let hero of heros" (click)="onSelect(hero)">
+    <li *ngFor="let hero of heros" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
   </ul>
