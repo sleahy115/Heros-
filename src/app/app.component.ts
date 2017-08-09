@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
+import { Hero } from './hero';
 
-export class Hero {
-    id:number;
-    name:string;
-}
 const HEROS: Hero[] = [
     {id:1, name:"Wonder Woman"},
     {id:2, name: "Thor"},
